@@ -1,0 +1,61 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Autor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <nav class="navbar navbar-dark bg-dark shadow-sm">
+        <a class="navbar-brand" href="{% url 'list_users' %}"> <strong> Desafio Tech </strong></a>
+          
+            <li class="nav-item">
+                <a href="{% url 'create_user' %}" class="navbar-brand">Cadastrar Usuário</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="{% url 'about' %}">O Autor</a>
+            </li>
+          
+      </nav>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <br><br><br>
+                <img src="{% static 'images/icon.png' %}" alt="some text" width=400 height=400>
+                <p class="form-control">Jorge Soares de Farias Júnior</p>
+            </div>
+            <div class="col">
+                <br><br><br><br><br><br><br>
+                <p class="form-control text-align: justify">Programador Web e Mobile, com experiência em Documentação de Software, BackEnd, FrontEnd utilizando Python, Java, JavaScript e Dart. Habilidades com tecnologias relacionadas a Banco de dados relacionais (SQL) e não relacionais.</p>
+                <div class="row">
+                    <div class="col">
+                        <img src="{% static 'images/github.png' %}" alt="some text" width=40 height=40>
+                    </div>
+                    <div class="row">
+                        <a href="https://github.com/jorgesfj">jorgesfj</a>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <img src="{% static 'images/linkedin.png' %}" alt="some text" width=40 height=40>
+                    </div>
+                    <div class="row">
+                        <a href="https://www.linkedin.com/in/jorge-soares-farias">Jorge Soares</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
